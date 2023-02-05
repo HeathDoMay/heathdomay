@@ -1,0 +1,242 @@
+/** Grid system - https://www.w3schools.com/css/css_rwd_grid.asp **/
+* {
+  box-sizing: border-box;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overflow {
+  overflow-x: auto;
+}
+
+html {
+  font-family: verdana;
+  background-image: url("background2.png");
+  background-repeat: no-repeat, repeat;
+  background-color: #272727;
+  color: white;
+
+
+}
+
+.banner {
+
+
+  top: 0px;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 0px;
+  overflow: hidden;
+  color: rgb(41, 41, 41);
+
+
+}
+
+li {
+  float: left;
+  margin: 20px 0px;
+}
+
+.title {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 0px 0px;
+  
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 24px 24px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.button:hover {
+  background-color: rgba(167, 167, 167, 0.3);
+  animation-name: highlight;
+  animation-duration: 0.5s;
+
+}
+
+/* The animation code */
+@keyframes highlight {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    background-color: rgba(167, 167, 167, 0.3);
+  }
+}
+
+@keyframes dropdownAni {
+
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(253, 252, 252);
+  }
+
+  100% {
+    background-color: rgba(167, 167, 167, 0.3);
+    color: rgba(19, 19, 19, 0.5)
+  }
+
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.text {
+margin: 300px 0px;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  /* padding: 32px 0px; */
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 24px 32px;
+  background-color: inherit;
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgba(167, 167, 167, 0.3);
+  animation-name: highlight;
+  animation-duration: 0.5s;
+  
+
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(167, 167, 167, 0.3);
+  animation-name: highlight;
+  animation-duration: 0.5s;
+  min-width: 160px;
+
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: rgb(252, 252, 252);
+  padding: 8px 25px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+.dropdown-content img {
+  padding: 0px 0px;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgba(167, 167, 167, 0.3);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
