@@ -85,9 +85,11 @@ img {
 
 html {
   font-family: verdana;
-  background-image: url("backgroundc.png");
+  background-image: url("background2.png");
   background-repeat: no-repeat, repeat;
   background-color: #272727;
+  background-size: 100% auto;
+
   color: white;
 
 
@@ -164,11 +166,14 @@ li a {
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 32px;
 }
 
 .text {
-margin: 200px 0px;
+}
+
+.darken {
+  background-color: rgb(36, 36, 36);
 }
 
 /* The dropdown container */

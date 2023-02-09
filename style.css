@@ -71,12 +71,16 @@
   display: table;
 }
 
+.darken {
+  background-color: rgb(36, 36, 36);
+}
+
 img {
   text-align: left;
   max-width: 100%;
   height: auto;
   display: block;
-  margin-left: auto;
+  /* margin-left: auto; */
   margin-right: auto;
 }
 
@@ -89,13 +93,9 @@ html {
   background-repeat: no-repeat, repeat;
   background-color: #272727;
   color: white;
-  background-image: url("backgroundh.jpg") !important;
+  background-image: url("headers/backgroundh.jpg") !important;
+  background-size: 100% auto;
 	background-repeat: no-repeat;
-
-
-}
-
-body {
 
 
 }
@@ -175,7 +175,7 @@ h1 {
 }
 
 .text {
-margin: 300px 0px;
+/* margin: 300px 0px; */
 }
 
 /* The dropdown container */

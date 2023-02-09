@@ -75,7 +75,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  /* margin-left: auto; */
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -85,7 +85,7 @@ img {
 
 html {
   font-family: verdana;
-  background-image: url("headers/background2.png");
+  background-image: url("backgroundc.png");
   background-repeat: no-repeat, repeat;
   background-color: #272727;
   background-size: 100% auto;
@@ -170,8 +170,8 @@ h1 {
 }
 
 .text {
-}
 
+}
 .darken {
   background-color: rgb(36, 36, 36);
 }
